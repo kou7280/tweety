@@ -5,6 +5,7 @@
           name="body" 
           class="w-full p-2"
           placeholder="What's up doc?"
+          required
       >
 
       </textarea>
@@ -12,17 +13,20 @@
       <hr class="my-4"> 
 
       <footer>
-          <div class="flex justify-between">
+          <div class="flex justify-between items-center">
               <img 
                 src="{{ auth()->user()->avatar }}" 
                 alt="Your avatar"
-                class="rounded-full">
+                class="rounded-full"
+                width="50"
+                height="50"
+              >
 
                 <button 
                 type="submit" 
-                class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg shadow"
+                class="bg-blue-500 hover:bg-blue-700 text-white py-4 px-12 rounded-full shadow"
                 >
-                    Tweet-a-roo!
+                    Publish
                 </button>
           </div>
       </footer>
